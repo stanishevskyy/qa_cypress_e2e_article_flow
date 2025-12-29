@@ -1,6 +1,6 @@
 const { faker } = require('@faker-js/faker');
 
-describe('', () => {
+describe('Article management', () => {
   let user;
   let article;
 
@@ -15,9 +15,9 @@ describe('', () => {
         description: faker.lorem.sentence(6),
         body: faker.lorem.paragraph()
       };
-
-      cy.visit('/');
     });
+
+    cy.visit('/');
   });
 
   it('should log in and create an article', () => {
